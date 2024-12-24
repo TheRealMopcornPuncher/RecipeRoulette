@@ -1,0 +1,28 @@
+{
+  "name": "reciperoulette",
+  "version": "1.0.0",
+  "description": "Recipe generation tool",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRealMopcornPuncher/RecipeRoulette.git"
+  },
+  "keywords": [
+    "Food",
+    "Home",
+    "Tool",
+    "Random",
+    "Fun",
+    "Recipe",
+    "Recipes"
+  ],
+  "author": "Amaya Allison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRealMopcornPuncher/RecipeRoulette/issues"
+  },
+  "homepage": "https://github.com/TheRealMopcornPuncher/RecipeRoulette#readme"
+}
