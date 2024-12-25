@@ -9,7 +9,8 @@ function createWindow () {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true, // Enable nodeIntegration
       contextIsolation: false // Disable contextIsolation
-    }
+    },
+    icon: path.join(__dirname, 'build', 'rr_nobg.ico')
   });
 
   mainWindow.loadFile('index.html');
