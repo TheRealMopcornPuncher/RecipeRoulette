@@ -13,7 +13,7 @@ function createWindow () {
     icon: path.join(__dirname, 'build', 'rr_nobg.ico')
   });
 
-  mainWindow.loadFile('index.html');
+  mainWindow.loadFile(path.join(__dirname, 'templates', 'index.html'));
 }
 
 app.whenReady().then(() => {
