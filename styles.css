@@ -23,7 +23,15 @@ form {
   overflow: hidden;
   border-right: 0.1em solid #333; /* Cursor width */
   width: 0; /* Initial width for typing effect */
-  animation: typing 2s steps(17) 1s forwards, blink 0.75s step-end infinite;
+  animation: typing 2s steps(20) 1s forwards, blink 0.75s step-end infinite;
+}
+
+#fadeout {
+  animation: fadeout 1s 4s forwards;
+}
+
+#fadein {
+  animation: fadein 1s 5s forwards;
 }
 
 /* Typing animation */
@@ -41,4 +49,15 @@ form {
   50% {
     border-color: transparent;
   }
+}
+
+.fadein {
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 1s ease-in-out; /* Smooth fade-in transition */
+}
+
+/* Optional: If you want to fade out later, you can add a class like .fadeout and define the transition */
+.fadeout {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
