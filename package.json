@@ -32,5 +32,8 @@
     "files": [
       "build/*"
     ]
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }
