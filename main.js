@@ -10,10 +10,10 @@ function createWindow () {
       nodeIntegration: true, // Enable nodeIntegration
       contextIsolation: false // Disable contextIsolation
     },
-    icon: path.join(__dirname, 'build', 'rr_nobg.ico')
+    icon: path.join(__dirname, 'build', 'rr.ico')
   });
 
-  mainWindow.loadFile(path.join(__dirname, 'templates', 'index.html'));
+  mainWindow.loadFile(path.join(__dirname, 'routes', 'index.html'));
 }
 
 app.whenReady().then(() => {

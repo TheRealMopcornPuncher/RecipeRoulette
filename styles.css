@@ -1,6 +1,44 @@
 .centered-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Typing effect */
+#text-container {
+  display: inline-flex;  /* Make container width match the text */
+  justify-content: center; /* Optional: to center the text horizontally */
+}
+
+#greeting {
+  display: inline-block;
+  font-size: 2em;
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: hidden;
+  border-right: 0.1em solid #333; /* Cursor width */
+  width: 0; /* Initial width for typing effect */
+  animation: typing 2s steps(17) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor blink animation */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
