@@ -79,3 +79,15 @@ form {
     transform: translateY(0); /* End at normal position */
   }
 }
+
+/* Styles for the continue button */
+#continue-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+}
