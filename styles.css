@@ -64,4 +64,18 @@ form {
 
 #ingredients-list li {
   padding: 0.5rem; /* Add padding to each list item */
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeIn 0.5s forwards; /* Apply fadeIn animation */
+}
+
+/* Animation for new list items */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Start slightly above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
 }
