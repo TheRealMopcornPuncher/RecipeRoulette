@@ -53,10 +53,8 @@
       document.getElementById('form').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission
         console.log('Form submitted'); // Debugging statement
-        this.classList.add('moveup'); // Add the moveup class to the form
-        console.log('moveup class added'); // Debugging statement
 
-        // Add the ingredient to the list after the form's transformation
+        // Add the ingredient to the list
         const ingredientInput = document.getElementById('ingredients');
         const ingredient = ingredientInput.value.trim();
         if (ingredient) {
