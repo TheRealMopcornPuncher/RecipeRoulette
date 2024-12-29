@@ -26,10 +26,6 @@ form {
   animation: typing 2s steps(20) 1s forwards, blink 0.75s step-end infinite;
 }
 
-#fadeout {
-  animation: fadeout 1s 4s forwards;
-}
-
 #fadein {
   animation: fadein 1s 5s forwards;
 }
@@ -60,4 +56,9 @@ form {
 .fadeout {
   opacity: 0;
   transition: opacity 1s ease-in-out;
+}
+
+.moveup {
+  transform: translateY(-100%);
+  transition: transform 1s ease-in-out;
 }
