@@ -1,0 +1,93 @@
+.centered-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Ensure elements are stacked vertically */
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Typing effect */
+#text-container {
+  display: inline-flex;  /* Make container width match the text */
+  justify-content: center; /* Optional: to center the text horizontally */
+}
+
+#greeting {
+  display: inline-block;
+  font-size: 2em;
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: hidden;
+  border-right: 0.1em solid #333; /* Cursor width */
+  width: 0; /* Initial width for typing effect */
+  animation: typing 2s steps(20) 1s forwards, blink 0.75s step-end infinite;
+}
+
+#fadein {
+  animation: fadein 1s 5s forwards;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor blink animation */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.fadein {
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 1s ease-in-out; /* Smooth fade-in transition */
+}
+
+/* Adjust the list items and margin */
+#ingredients-list {
+  font-size: 1.5em; /* Make the list items larger */
+  margin-top: 0; /* Remove the margin between the form and the list */
+  max-height: 200px; /* Set a maximum height for the list */
+  overflow-y: auto; /* Make the list scrollable when it exceeds the max height */
+  padding-right: 1rem; /* Add padding to prevent scrollbar clipping */
+}
+
+#ingredients-list li {
+  padding: 0.5rem; /* Add padding to each list item */
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeIn 0.5s forwards; /* Apply fadeIn animation */
+}
+
+/* Animation for new list items */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Start slightly above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
+}
+
+/* Styles for the continue button */
+#continue-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+}
